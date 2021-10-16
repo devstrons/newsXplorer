@@ -1,5 +1,5 @@
 <p align="center">
-    <img style="margin: 0 0 0 60px" src="static/assets/img/NewsXplorer.png" alt="newsXplorer"/>
+    <img style="margin: 0 0 0 60px" src="static/assets/img/newsXplorer-banner.png" alt="newsXplorer"/>
 </p>
 <div align="center">
 </br>
