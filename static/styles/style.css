@@ -35,6 +35,20 @@ header {
 header img{
   margin-left:12rem;
 }
+.logo-flex{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.login{
+  background: #FF6A3D;
+  width: fit-content;
+height: fit-content;
+margin-right: 6rem;
+padding: 7px;
+
+}
+
 li:first-child{
   margin: 0;
 }
@@ -49,7 +63,7 @@ li:first-child{
 }
 
 .navbar {
-  padding-left: 8rem;
+  padding-left:8rem;
   margin-top: 3rem;
   z-index: 5;
   width: 100%;
@@ -99,6 +113,10 @@ li:first-child{
   border: 1px solid #FFFCFC;
 box-sizing: border-box;
 border-radius: 8px;
+margin: auto;
+padding-left: 10px;
+padding-right: 10px;
+
 }
 
 .icon {
