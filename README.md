@@ -6,16 +6,17 @@
 <a href="https://github.com/devstrons/newsXplorer"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 <a href="https://github.com/devstrons/newsXplorer/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?v=103"></a>
 </br>
+</div>
 
-## Inspiration
+## Inspiration:
 Unfortunately, many people complain they don't have enough time in their day-to-day lives to read.
 It’ll feel difficult at first to make reading part of your daily habit, especially if you aren’t used to it already. But with patience and consistency, you’ll remember that you love to read & update yourselves, and forget about all the reasons you made excuses not to.
 Always use to navigate through different platforms, to read vary news.
 
-## What it does
+## What it does?
 To overcome through this major problem description, we came up with an idea to get the impressive User Interface/ User Experience (UI/UX) for the readers to attract them read daily. Also, readers can find a mixture of all news at one place at a time, just they need to navigate through bars at top. As a developer, we came up with hackers news as well to justify & fulfil the requirements.
 
-## How we built it
+## How we built it?
 <code><a href="#"><img height="40" width="40" src="https://raw.githubusercontent.com/devstrons/newsXplorer/master/static/assets/img/html.png"></a></code>
 <code><a href="#"><img height="40" width="40" src="https://raw.githubusercontent.com/devstrons/newsXplorer/master/static/assets/img/flask.png"></a></code>
 <code><a href="#"><img height="40" width="45" src="https://cdn.iconscout.com/icon/free/png-256/figma-682083.png"></a></code>
@@ -29,7 +30,7 @@ To start contributing, follow the below guidelines:
 
 🌟 Star the project to bookmark and appreciate the work.
 
-newXplorer welcomes everyone to contribute to this project. Make sure you read the guidelines mentioned [here](https://github.com/devstrons/newXplorer/blob/main/CONTRIBUTING.md).
+"newXplorer" welcomes everyone to contribute to this project. Make sure you read the guidelines mentioned [here](https://github.com/devstrons/newXplorer/blob/main/CONTRIBUTING.md).
 
 <h2 align="center" style="font-weight:bold">🤝 Community</h2>
 <p align="center">
@@ -42,6 +43,6 @@ Head over to <a href="https://discord.gg/MVujzTBqed" >discord</a>.
 We're thanking all the amazing cotributors for their time & efforts.
 </p>
 
-<h2 align="center" style="font-weight:bold">📰 License</h2>
+<h2 align="left" style="font-weight:bold">📰 License</h2>
 
 > The **"newsXplorer"** project is released under the [MIT license](https://github.com/devstrons/newsXplorer/blob/master/LICENSE). <br> Developed &amp; maintained by the DEVSTRONS' Community. Copyright 2021 © DEVSTRONS'.
