@@ -1,11 +1,13 @@
 {% extends "layout.html" %}
 {% block content %}
-  <div class="news-content">
+  
   {% for post in data %}
+  <div class="news-content">
   <h1>{{ post.title }}</h1>
   <p>{{ post.description }}</p>
   <img src="{{ post.imgUrl }}" width="400" />
-  {% endfor%}
   </div>
+  {% endfor%}
+  
 {% endblock content %}
 

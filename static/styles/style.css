@@ -29,7 +29,7 @@ i{
 
 header {
   background-color: #1a2238;
-  margin-bottom: 2rem;
+  padding-bottom: .7rem;
   padding-top: 5rem;
 }
 header img{
@@ -138,6 +138,9 @@ padding-right: 10px;
 footer {
   background: #1A2238;
   height: 8rem;
+  color: white;
+  font-size: 33px;
+  padding-left: 39%;
 }
 
 /* News section */
@@ -147,6 +150,18 @@ footer {
   margin-left: 4rem;
   display: flex; 
   flex-direction: column; 
+}
+
+.news-content {
+  background: rgb(253, 248, 244);
+  padding: 2rem;
+  margin-top: 1rem;
+  background: #FFFFFF;
+  box-shadow: 13px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 61px;
+}
+.news-content:last-child{
+  margin-bottom: 1rem;
 }
 @media (max-width: 868px) {
   body.disabledScroll {
