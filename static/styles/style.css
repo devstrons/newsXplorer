@@ -21,11 +21,15 @@
 .content {
   margin: auto;
   padding: 0px 30px;
+  justify-content: space-between;
 }
+i{
+ color: white;
+}
+
 header {
   background-color: #1a2238;
   margin-bottom: 10rem;
-  display: absolute;
   padding-top: 5rem;
 }
 header img{
@@ -34,11 +38,15 @@ header img{
 li:first-child{
   margin: 0;
 }
-header ul {
-  margin-left: 7rem;
+.socials{
+  margin-right: 19rem;
+}
+.socials i{
+  margin-left: 10px;
 }
 
 .navbar {
+  padding-left: 8rem;
   margin-top: 3rem;
   z-index: 5;
   width: 100%;
@@ -62,6 +70,11 @@ header ul {
 }
 .navbar .menu-list {
   display: inline-flex;
+  justify-content: space-between; 
+}
+.socials{
+  color: white;
+  display:flex;
 }
 .menu-list li {
   list-style: none;
@@ -75,21 +88,16 @@ header ul {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.menu-list li a:hover {
+.menu-list li a:hover , i:hover{
   color: #ff6a3d;
 }
 
-.about {
-  padding: 40px 0;
+.follow-btn{
+  border: 1px solid #FFFCFC;
+box-sizing: border-box;
+border-radius: 8px;
 }
-.about .title {
-  font-size: 35px;
-  font-weight: 700;
-}
-.about p {
-  padding-top: 20px;
-  text-align: justify;
-}
+
 .icon {
   color: #fff;
   font-size: 20px;
