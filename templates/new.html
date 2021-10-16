@@ -5,5 +5,10 @@
   <br />
   <p>{{ post.description }}</p>
   <img src="{{ post.imgUrl }}" width="400" />
+  {% if post.youtube %}
+  <iframe src="{{ post.youtube }}"
+          width=300em>
+    </iframe>
+  {% endif %}
   {% endfor%}
 {% endblock content %}

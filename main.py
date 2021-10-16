@@ -35,8 +35,6 @@ def make_posts(articles: list) -> list:
         post["time"] = article["publishedAt"]
         if "youtube" in post["sourceName"]["name"].lower():
             post["youtube"] = f"https:/youtube.com/embed/{post['sourceUrl'].split('=')[-1]}"
-            p("-"*30)
-            p(post["youtube"])
         data.append(post)
     return data
 
