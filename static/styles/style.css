@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background-color: #1b1b1b;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -23,6 +22,9 @@
   max-width: 1250px;
   margin: auto;
   padding: 0px 30px;
+}
+header{
+  background-color: #1A2238;
 }
 .navbar{
   position: fixed;
