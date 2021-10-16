@@ -16,8 +16,8 @@ Always use to navigate through different platforms, to read vary news.
 To overcome through this major problem description, we came up with an idea to get the impressive User Interface/ User Experience (UI/UX) for the readers to attract them read daily. Also, readers can find a mixture of all news at one place at a time, just they need to navigate through bars at top. As a developer, we came up with hackers news as well to justify & fulfil the requirements.
 
 ## How we built it
-<code><a href="#"><img height="40" width="40" src="https://raw.githubusercontent.com/devstrons/newsXplorer/master/static/assets/img/flask.png?token=ASC3QPFNP2EJ5GR62P6FAFDBNNEIQ"></a></code>
-<code><a href="#"><img height="40" width="40" src="https://raw.githubusercontent.com/devstrons/newsXplorer/master/static/assets/img/html.png?token=ASC3QPHSGBGON3OXJWPKW2TBNNDG2"></a></code>
+<code><a href="#"><img height="40" width="40" src="https://raw.githubusercontent.com/devstrons/newsXplorer/master/static/assets/img/html.png"></a></code>
+<code><a href="#"><img height="40" width="40" src="https://raw.githubusercontent.com/devstrons/newsXplorer/master/static/assets/img/flask.png"></a></code>
 <code><a href="#"><img height="40" width="45" src="https://cdn.iconscout.com/icon/free/png-256/figma-682083.png"></a></code>
 <code><a href="#"><img height="40" width="40" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"></a></code>
 <code><a href="#"><img height="40" width="40" src="https://user-images.githubusercontent.com/71369943/125153949-d8854280-e174-11eb-99bd-af46a5767a54.png"></a></code>
