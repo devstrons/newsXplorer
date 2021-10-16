@@ -19,7 +19,6 @@
   background: rgb(0, 123, 255, 0.3);
 }
 .content {
-  max-width: 1250px;
   margin: auto;
   padding: 0px 30px;
 }
@@ -27,15 +26,22 @@ header {
   background-color: #1a2238;
   margin-bottom: 10rem;
   display: absolute;
-  padding: 5rem;
+  padding-top: 5rem;
+}
+header img{
+  margin-left:12rem;
 }
 li:first-child{
   margin: 0;
 }
+header ul {
+  margin-left: 7rem;
+}
+
 .navbar {
+  margin-top: 3rem;
   z-index: 5;
   width: 100%;
-  padding: 25px 0;
   transition: all 0.3s ease;
 }
 .navbar.sticky {
@@ -98,6 +104,7 @@ li:first-child{
 .navbar.sticky .icon.cancel-btn {
   top: 10px;
 }
+
 @media (max-width: 868px) {
   body.disabledScroll {
     overflow: hidden;
