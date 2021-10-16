@@ -61,4 +61,4 @@ We're thanking all the amazing cotributors for their time & efforts.
 
 <h2 align="left" style="font-weight:bold">📰 License</h2>
 
-> The **newsXplorer** project is released under the [MIT license](https://github.com/devstrons/newsXplorer/blob/main/LICENSE). <br> Developed &amp; maintained by the DEVSTRONS' Community. Copyright 2021 © DEVSTRONS'.
+> The **newsXplorer** project is released under the [MIT license](https://github.com/devstrons/newsXplorer/blob/master/LICENSE). <br> Developed &amp; maintained by the DEVSTRONS' Community. Copyright 2021 © DEVSTRONS'.
