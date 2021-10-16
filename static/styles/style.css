@@ -1,62 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+  background: #888;
 }
-::selection{
-  background: rgb(0,123,255,0.3);
+::selection {
+  background: rgb(0, 123, 255, 0.3);
 }
-.content{
+.content {
   max-width: 1250px;
   margin: auto;
   padding: 0px 30px;
 }
-header{
-  background-color: #1A2238;
+header {
+  background-color: #1a2238;
   margin-bottom: 10rem;
   display: absolute;
+  padding: 5rem;
 }
-.navbar{
+li:first-child{
+  margin: 0;
+}
+.navbar {
   z-index: 5;
   width: 100%;
   padding: 25px 0;
   transition: all 0.3s ease;
 }
-.navbar.sticky{
+.navbar.sticky {
   padding: 10px 0;
   background: #1b1b1b;
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
-.navbar .content{
+.navbar .content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 }
-.navbar .logo a{
+
+.navbar .logo a {
   color: #fff;
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
 }
-.navbar .menu-list{
+.navbar .menu-list {
   display: inline-flex;
 }
-.menu-list li{
+.menu-list li {
   list-style: none;
+  padding: 0;
 }
-.menu-list li a{
+.menu-list li a {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -64,40 +69,40 @@ header{
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.menu-list li a:hover{
-  color: #FF6A3D;
+.menu-list li a:hover {
+  color: #ff6a3d;
 }
 
-.about{
+.about {
   padding: 40px 0;
 }
-.about .title{
+.about .title {
   font-size: 35px;
   font-weight: 700;
 }
-.about p{
+.about p {
   padding-top: 20px;
   text-align: justify;
 }
-.icon{
+.icon {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   display: none;
 }
-.icon.cancel-btn{
+.icon.cancel-btn {
   position: absolute;
   right: 30px;
   top: 20px;
 }
-.navbar.sticky .icon.cancel-btn{
+.navbar.sticky .icon.cancel-btn {
   top: 10px;
 }
 @media (max-width: 868px) {
-  body.disabledScroll{
+  body.disabledScroll {
     overflow: hidden;
   }
-  .icon{
+  .icon {
     display: block;
     height: 50px;
     width: 50px;
@@ -106,16 +111,16 @@ header{
     border-radius: 50%;
     z-index: 9;
   }
-  .icon.cancel-btn{
+  .icon.cancel-btn {
     display: none;
   }
-  .icon.cancel-btn.show{
+  .icon.cancel-btn.show {
     display: block;
   }
-  .icon.hide{
+  .icon.hide {
     display: none;
   }
-  .navbar .menu-list{
+  .navbar .menu-list {
     position: fixed;
     top: 0;
     left: 0;
@@ -128,16 +133,16 @@ header{
     clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
     transition: all 0.3s ease;
   }
-  .navbar.sticky .menu-list{
+  .navbar.sticky .menu-list {
     clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
   }
-  .navbar .menu-list.active{
+  .navbar .menu-list.active {
     clip-path: circle(75%);
   }
-  .navbar .menu-list li{
+  .navbar .menu-list li {
     margin-top: 45px;
   }
-  .navbar .menu-list li a{
+  .navbar .menu-list li a {
     font-size: 23px;
   }
 }
