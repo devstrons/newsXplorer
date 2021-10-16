@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div>
+  {% for post in data %}
+  <h1>{{ post.title }}</h1>
+  <br />
+  <p>{{ post.description }}</p>
+  <img src="{{ post.imgUrl }}" width="400" />
+  {% endfor%}
+  </div>
+{% endblock content %}

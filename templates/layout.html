@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link -->
+    <!--   href="https://fonts.googleapis.com/css?family=Josefin+Sans" -->
+    <!--   rel="stylesheet" -->
+    <!-- /> -->
+    <link
+      rel="stylesheet" href="{{ url_for('static', filename='main.css')}}" type="text/css" />
+    <meta charset="UTF-8" />
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Flask Blog</title>
+    {% endif %}
+  </head>
+  <body>
+    <div id=bar>
+      <div id="in-bar">
+          <a href="/home">Home</a>
+          <a href="/news/general">General</a>
+          <a href="/news/technology">Technology</a>
+          <a href="/news/health">Health</a>
+          <a href="/news/entertainment">Entertainment</a>
+          <a href="/news/business">Business</a>
+          <a href="/news/science">Science</a>
+          <a href="/news/sport">Sport</a>
+      </div>
+    </div>
+    {% block content %}{% endblock %}
+  </body>
+</html>
