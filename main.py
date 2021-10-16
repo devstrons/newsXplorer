@@ -95,4 +95,4 @@ def get_hacker_posts() -> list[dict]:
 
 if __name__ == "__main__":
     # app.run(use_debugger=False, use_reloader=False, passthrough_errors=True)
-    app.run(debug=True, port=os.environ['PORT'])
+    app.run(debug=True, port=os.environ['PORT'],host='0.0.0.0')
