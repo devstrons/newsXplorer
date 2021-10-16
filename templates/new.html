@@ -1,16 +1,20 @@
 {% extends "layout.html" %}
 {% block content %}
 
-  {% for post in hacker_posts %}
-       {{ post.time }}
-       {{ post.title }}
-  {% endfor%}
 
+  <!-- new posts -->
   {% for post in data %}
   <div class="news-content">
   <h1>{{ post.title }}</h1>
   <p>{{ post.description }}</p>
   <img src="{{ post.imgUrl }}" width="400" />
   </div>
+  {% endfor%}
+
+  <!-- hacker new posts -->
+  {% for post in hacker_posts %}
+    {{ post.time }}
+    {{ post.title }}
+    {{ post.url }}
   {% endfor%}
 {% endblock content %}
