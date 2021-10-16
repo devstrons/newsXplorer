@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}
+
+  {% for post in hacker_posts %}
+       {{ post.time }}
+       {{ post.title }}
+  {% endfor%}
+
   {% for post in data %}
   <h1>{{ post.title }}</h1>
   <br />
