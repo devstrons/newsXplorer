@@ -7,9 +7,10 @@
   {% endfor%}
 
   {% for post in data %}
+  <div class="news-content">
   <h1>{{ post.title }}</h1>
-  <br />
   <p>{{ post.description }}</p>
   <img src="{{ post.imgUrl }}" width="400" />
+  </div>
   {% endfor%}
 {% endblock content %}
