@@ -172,6 +172,23 @@ footer {
 .news-content:last-child{
   margin-bottom: 1rem;
 }
+/* wheather widget */
+.wheather{
+  width:30%;
+}
+/* sidebar */
+.row-grid{
+  display: grid;
+  grid-template-columns: 961px 301;
+}
+.news-width{
+  grid-column:1/6;
+  grid-row: auto;
+}
+.sidebar{
+  grid-column:6/7;
+  grid-row: auto;
+}
 @media (max-width: 868px) {
   body.disabledScroll {
     overflow: hidden;
