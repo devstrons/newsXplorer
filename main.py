@@ -14,6 +14,7 @@ def news_page(category):
     url = get_news_url(category)
     data = get_posts(url)
     hacker_posts = get_hacker_posts()
+    p(hacker_posts)
     return render_template(
         "new.html",
         data=data,
@@ -29,7 +30,7 @@ def home():
     data = get_posts(url)
     hacker_posts = get_hacker_posts()
     return render_template(
-        "home.html",
+        "new.html",
         data=data,
         title="General news",
         hacker_posts=hacker_posts,
