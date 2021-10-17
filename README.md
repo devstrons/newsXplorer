@@ -9,12 +9,17 @@
 </div>
 
 ## Inspiration:
-Unfortunately, many people complain they don't have enough time in their day-to-day lives to read.
-It’ll feel difficult at first to make reading part of your daily habit, especially if you aren’t used to it already. But with patience and consistency, you’ll remember that you love to read & update yourselves, and forget about all the reasons you made excuses not to.
-Always use to navigate through different platforms, to read vary news.
+Unfortunately, many developers/hackers complain they don't have enough time in their day-to-day lives to read.
+It’ll feel difficult at first to make reading part of your daily habit, especially if you aren’t used to it already. But with patience and consistency, you’ll remember that you love to read & update yourselves and forget about all the reasons you made excuses not to.
+Always use to navigate through different platforms, to read vary news from multiple platforms.
 
 ## What it does?
-To overcome through this major problem description, we came up with an idea to get the impressive User Interface/ User Experience (UI/UX) for the readers to attract them read daily. Also, readers can find a mixture of all news at one place at a time, just they need to navigate through bars at top. As a developer, we came up with hackers news as well to justify & fulfil the requirements.
+To overcome this major problem description, we came up with an idea to get the impressive User Interface/ User Experience (UI/UX) for the readers to attract them to read daily. Also, readers can find a mixture of all news about General, Business, Health, Science, Technology & Sports at a time within [`newsXplorer`](https://newsxplorer.herokuapp.com), just they need to navigate through the menu at the top. As a developer, we came up with hackers news as well to justify & fulfil the requirements.
+Being under API Hacks 2.O, we create a web application i.e., integrates with the APIs are as follows:-
+- News API to fetch data from multiple news article website to showcase it into categories.
+- Weather API throughout navbar to show the temperature/climate effects while reading news.
+- Hacker news API to fulfil the requirements of developers/hackers real-time.
+- SAWO API to authentication readers during activities.
 
 ## How we built it?
 <code><a href="#"><img height="40" width="40" src="https://raw.githubusercontent.com/devstrons/newsXplorer/master/static/assets/img/html.png"></a></code>
