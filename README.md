@@ -15,7 +15,7 @@ Always use to navigate through different platforms, to read vary news from multi
 
 ## What it does?
 To overcome this major problem description, we came up with an idea to get the impressive User Interface/ User Experience (UI/UX) for the readers to attract them to read daily. Also, readers can find a mixture of all news about General, Business, Health, Science, Technology & Sports at a time within [`newsXplorer`](https://newsxplorer.herokuapp.com), just they need to navigate through the menu at the top. As a developer, we came up with hackers news as well to justify & fulfil the requirements.
-Being under [API Hacks 2.O](https://apihacks.co), we create a web application i.e., integrates with the APIs are as follows:-
+Being under an hackathon, we create a web application i.e., integrates with the APIs are as follows:-
 - **News API** to fetch data from multiple news article website to showcase it into categories.
 - **Weather API** throughout navbar to show the temperature/climate effects while reading news.
 - **Hacker news API** to fulfil the requirements of developers/hackers real-time.
