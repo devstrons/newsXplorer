@@ -1,9 +1,31 @@
 import os
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 import requests
 from pprint import pprint as p
+from sawo import createTemplate, getContext, verifyToken
+import json
+from dotenv import load_dotenv
+
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 
 app = Flask(__name__)
+# using flask = True generates flask template
+createTemplate("./templates/partials",flask=True)
+
+load = ''
+loaded = 0
+
+def setPayload(payload):
+    global load
+    load = payload
+
+def setLoaded(reset=False):
+    global loaded
+    if reset:
+        loaded = 0
+    else:
+        loaded += 1
 
 story_url = "https://hacker-news.firebaseio.com/v0/item/"
 top_stories_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
@@ -36,6 +58,26 @@ def home():
         title="General news",
         hacker_posts=hacker_posts,
     )
+
+@app.route("/login_page")
+def login_page():
+    setLoaded()
+    setPayload(load if loaded < 2 else '')
+    sawo = {
+        "auth_key": "66acae0b-fa80-460b-beb7-66590b7079ee",
+        "to": "login",
+        "identifier": "email"
+    }
+    return render_template("login.html", sawo=sawo, load=load)
+
+
+@app.route("/login", methods=["POST", "GET"])
+def login():
+    payload = json.loads(request.data)["payload"]
+    setLoaded(True)
+    setPayload(payload)
+    status = 200 if(verifyToken(payload)) else 404
+    return {"status": status}
 
 
 def make_posts(articles: list) -> list:
@@ -95,4 +137,4 @@ def get_hacker_posts() -> list[dict]:
 
 if __name__ == "__main__":
     # app.run(use_debugger=False, use_reloader=False, passthrough_errors=True)
-    app.run(debug=True, port=os.environ['PORT'],host='0.0.0.0')
+    app.run(debug=True)
