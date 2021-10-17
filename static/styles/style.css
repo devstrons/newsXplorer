@@ -162,7 +162,8 @@ footer {
   box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
   overflow: hidden; 
   background: white;
-  transition: all .5s ease; 
+  transition: all .5s ease;
+  width: 80rem; 
 }
 .news-content:hover{
   transform: translate3D(0,-1px,0) scale(1.03); 
@@ -172,6 +173,22 @@ footer {
 }
 .news-content:last-child{
   margin-bottom: 1rem;
+}
+.row-grid{
+  display: flex;
+  flex-direction: row;
+}
+.sidebar{
+  float: right;
+  position: relative;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+  width:20rem;
+}
+.sidebar a{
+  text-decoration: none;
+  
 }
 
 @media (max-width: 868px) {
