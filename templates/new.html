@@ -17,7 +17,9 @@
   <div class="card">
   <h3>Hacker News</h3>
   {% for post in hacker_posts %}
-    <a href="{{ post.url }}">{{ post.title }}<a><br />
+  <ul>
+   <li> <a href="{{ post.url }}">{{ post.title }}<a><br /></li>
+  </ul>
   {% endfor%} 
 </div>
 </div>
