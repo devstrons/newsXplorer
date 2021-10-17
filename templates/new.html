@@ -14,11 +14,14 @@
   </div>
   <div class="sidebar">
   <!-- hacker new posts -->
-  <!-- {% for post in hacker_posts %}
-    {{ post.time }}
-    {{ post.title }}
-    {{ post.url }}
-  {% endfor%} -->
+  <div class="card">
+  <h3>Hacker News</h3>
+  {% for post in hacker_posts %}
+  <ul>
+   <li> <a href="{{ post.url }}">{{ post.title }}<a><br /></li>
+  </ul>
+  {% endfor%} 
+</div>
 </div>
 </div>
   
