@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 story_url = "https://hacker-news.firebaseio.com/v0/item/"
 top_stories_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
-stories_n = 8
+stories_n = 14
 
 
 @app.route("/news/<category>")
