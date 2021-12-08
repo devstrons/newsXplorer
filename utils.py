@@ -5,6 +5,7 @@ story_url = "https://hacker-news.firebaseio.com/v0/item/"
 top_stories_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
 stories_n = 14
 
+
 def make_posts(articles: list) -> list:
     data = []
 
@@ -52,9 +53,14 @@ def get_story(story_url) -> dict:
     return data
 
 
-def get_hacker_posts() -> list[dict]:
+def get_hacker_news() -> list[dict]:
     hacker_posts = []
     hacker_ids = get_hacker_ids(stories_n)
     for url in make_urls(hacker_ids):
         hacker_posts.append(get_story(url))
     return hacker_posts
+
+
+def get_news(category="general"):
+    url = get_news_url(category)
+    return get_posts(url)
