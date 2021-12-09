@@ -3,10 +3,10 @@ import requests
 
 story_url = "https://hacker-news.firebaseio.com/v0/item/"
 top_stories_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
-stories_n = 14
+n_hacker_posts = 14
 
 
-def make_posts(articles: list) -> list:
+def make_news_posts(articles: list) -> list:
     data = []
 
     for article in articles[2:6]:
@@ -25,21 +25,17 @@ def make_posts(articles: list) -> list:
     return data
 
 
-def get_news_url(category="general"):
-    return f"https://saurav.tech/NewsAPI/top-headlines/category/{category}/in.json"
-
-
-def get_posts(url):
+def get_news(category="general"):
+    url = f"https://saurav.tech/NewsAPI/top-headlines/category/{category}/in.json"
     articles = requests.get(url).json()["articles"]
-    data = make_posts(articles)
+    data = make_news_posts(articles)
     return data
 
 
 # make urls
-def make_urls(story_ids: list[str]) -> str:
+def make_hacker_urls(story_ids: list[str]) -> str:
     for story_id in story_ids:
-        url = f"{story_url}{story_id}.json"
-        yield url
+        yield f"{story_url}{story_id}.json"
 
 
 def get_hacker_ids(stories_n) -> list[str]:
@@ -48,19 +44,14 @@ def get_hacker_ids(stories_n) -> list[str]:
 
 
 # get story data
-def get_story(story_url) -> dict:
+def get_hacker_post(story_url) -> dict:
     data = requests.get(story_url).json()
     return data
 
 
 def get_hacker_news() -> list[dict]:
     hacker_posts = []
-    hacker_ids = get_hacker_ids(stories_n)
-    for url in make_urls(hacker_ids):
-        hacker_posts.append(get_story(url))
+    hacker_ids = get_hacker_ids(n_hacker_posts)
+    for url in make_hacker_urls(hacker_ids):
+        hacker_posts.append(get_hacker_post(url))
     return hacker_posts
-
-
-def get_news(category="general"):
-    url = get_news_url(category)
-    return get_posts(url)
