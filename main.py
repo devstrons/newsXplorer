@@ -1,15 +1,15 @@
 import os
-from flask import Flask, render_template, url_for
+from quart import Quart, render_template, url_for
 from utils import get_hacker_news, get_news
 
-app = Flask(__name__)
+app = Quart(__name__)
 
 
 @app.route("/news/<category>")
-def news_page(category):
+async def news_page(category):
     data = get_news(category)
     hacker_posts = get_hacker_news()
-    return render_template(
+    return await render_template(
         "new.html",
         data=data,
         title=data[0]["title"],
@@ -19,10 +19,10 @@ def news_page(category):
 
 @app.route("/")
 @app.route("/home")
-def home():
+async def home():
     data = get_news()
     hacker_posts = get_hacker_news()
-    return render_template(
+    return await render_template(
         "new.html",
         data=data,
         title="General news",
