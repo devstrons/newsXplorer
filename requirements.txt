@@ -1,4 +1,5 @@
 aiofiles==0.8.0
+anyio==3.4.0
 blinker==1.4
 certifi==2021.10.8
 charset-normalizer==2.0.9
@@ -6,6 +7,8 @@ click==8.0.3
 h11==0.12.0
 h2==4.1.0
 hpack==4.0.0
+httpcore==0.14.3
+httpx==0.21.1
 hypercorn==0.12.0
 hyperframe==6.0.1
 idna==3.3
@@ -14,8 +17,8 @@ Jinja2==3.0.3
 MarkupSafe==2.0.1
 priority==2.0.0
 quart==0.16.1
-requests==2.26.0
+rfc3986==1.5.0
+sniffio==1.2.0
 toml==0.10.2
-urllib3==1.26.7
 Werkzeug==2.0.2
 wsproto==1.0.0
