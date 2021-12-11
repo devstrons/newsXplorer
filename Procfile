@@ -1,2 +1,2 @@
-web: python main.py
-worker: python main.py
+web: hypercorn main.py
+worker: hypercorn main.py
