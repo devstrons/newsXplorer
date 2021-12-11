@@ -40,16 +40,16 @@ async def get_news(category: str = "general") -> list[dict]:
             reqs = await asyncio.gather(tasks)
         articles = reqs[0].json()["articles"][:max_news_posts]
         data = make_news_posts(articles)
-        news_cache_make(data, category)
+        await news_cache_make(data, category)
     return data
 
 
-def is_news_recent(cache: Path):
-    recent = (time.time() - cache.stat().st_mtime) / 60 < 4
+def is_cache_recent(cache: Path):
+    recent = (time.time() - cache.stat().st_mtime) / 60 * 60 < 1
     return recent
 
 
-def news_cache_make(sd: list[dict], category: str):
+async def news_cache_make(sd: list[dict], category: str):
     with open(f"news_{category}.json", "w") as fp:
         json.dump(sd, fp)
 
@@ -62,7 +62,7 @@ def news_cache_load(category: str) -> list[dict]:
 
 def news_cache_exists(category: str) -> bool:
     cache = Path(f"news_{category}.json")
-    if cache.exists() and is_news_recent(cache):
+    if cache.exists() and is_cache_recent(cache):
         return True
     return False
 
@@ -101,11 +101,6 @@ async def get_hacker_news() -> list[dict]:
     return hacker_posts
 
 
-def is_hacker_recent(cache: Path):
-    recent = (time.time() - cache.stat().st_mtime) / 60 < 4
-    return recent
-
-
 def hacker_cache_make(sd: list[dict]):
     with open("hacker_cache.json", "w") as fp:
         json.dump(sd, fp)
@@ -119,6 +114,6 @@ def hacker_cache_load() -> list[dict]:
 
 def hacker_cache_exists() -> bool:
     cache = Path("hacker_cache.json")
-    if cache.exists() and is_hacker_recent(cache):
+    if cache.exists() and is_cache_recent(cache):
         return True
     return False
