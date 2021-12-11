@@ -1,4 +1,4 @@
-@<p align="center">
+<p align="center">
     <img style="margin: 0 0 0 60px" src="static/assets/img/newsXplorer.png" alt="newsXplorer"/>
 </p>
 <div align="center">
@@ -30,6 +30,8 @@ Being under the hackathon, we create a web application i.e., integrates with the
 <code><a href="#"><img height="40" width="40" src="https://user-images.githubusercontent.com/71369943/125153949-d8854280-e174-11eb-99bd-af46a5767a54.png"></a></code>
 <br />
 <br />
+<br />
+
 ## 🛠️  Project Architecture
 ![image](./static/assets/img/chart.png)
 
