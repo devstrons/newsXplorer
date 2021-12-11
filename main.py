@@ -6,7 +6,10 @@ app = Quart(__name__)
 
 
 @app.route("/news/<category>")
-async def news_page(category):
+@app.route("/home")
+@app.route("/")
+async def news_page(category="general"):
+    
     data = await get_news(category)
     hacker_posts = await get_hacker_news()
     return await render_template(
@@ -16,18 +19,6 @@ async def news_page(category):
         hacker_posts=hacker_posts,
     )
 
-
-@app.route("/")
-@app.route("/home")
-async def home():
-    data = await get_news()
-    hacker_posts = await get_hacker_news()
-    return await render_template(
-        "new.html",
-        data=data,
-        title="General news",
-        hacker_posts=hacker_posts,
-    )
 
 
 if __name__ == "__main__":
