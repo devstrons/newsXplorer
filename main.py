@@ -11,7 +11,6 @@ API_KEY = os.getenv("API_KEY")
 
 app = Flask(__name__)
 # using flask = True generates flask template
-createTemplate("./templates/partials",flask=True)
 
 load = ''
 loaded = 0
@@ -26,6 +25,8 @@ def setLoaded(reset=False):
         loaded = 0
     else:
         loaded += 1
+
+createTemplate("./templates/partials",flask=True)
 
 story_url = "https://hacker-news.firebaseio.com/v0/item/"
 top_stories_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
@@ -62,9 +63,9 @@ def home():
 @app.route("/login_page")
 def login_page():
     setLoaded()
-    setPayload(load if loaded < 2 else '')
+    setPayload(load if loaded<2 else '')
     sawo = {
-        "auth_key": "66acae0b-fa80-460b-beb7-66590b7079ee",
+        "auth_key": "api_key",
         "to": "login",
         "identifier": "email"
     }

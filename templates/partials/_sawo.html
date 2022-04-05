@@ -1,0 +1,21 @@
+<div id="sawo-container" style="height: 300px; width: 300px"></div>
+<script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  var config = {
+    containerID: "sawo-container",
+    identifierType: "{{sawo.identifier}}",
+    apiKey: "{{sawo.auth_key}}",
+    onSuccess: (payload) => {
+      axios({
+        method: "post",
+        url: "/{{sawo.to}}",
+        data: { payload },
+      }).then((res) => {
+        location.reload();
+      });
+    },
+  };
+  var sawo = new Sawo(config);
+  sawo.showForm();
+</script>
