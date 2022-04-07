@@ -8,6 +8,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
+print("ffff")
+print(API_KEY)
 
 app = Flask(__name__)
 # using flask = True generates flask template
@@ -65,7 +67,7 @@ def login_page():
     setLoaded()
     setPayload(load if loaded<2 else '')
     sawo = {
-        "auth_key": "api_key",
+        "auth_key": API_KEY,
         "to": "login",
         "identifier": "email"
     }
