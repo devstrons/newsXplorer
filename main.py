@@ -1,19 +1,16 @@
 import os
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, request
 import requests
-from pprint import pprint as p
-from sawo import createTemplate, getContext, verifyToken
+from sawo import createTemplate, verifyToken
 import json
 from dotenv import load_dotenv
 
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
-print("ffff")
-print(API_KEY)
 
 app = Flask(__name__)
 # using flask = True generates flask template
-
+    
 load = ''
 loaded = 0
 
@@ -62,7 +59,7 @@ def home():
         hacker_posts=hacker_posts,
     )
 
-@app.route("/login_page")
+@app.route("/login")
 def login_page():
     setLoaded()
     setPayload(load if loaded<2 else '')
