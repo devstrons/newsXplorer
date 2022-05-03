@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   {% if title %}
-      <title>{{ title }}</title>
+  <title>{{ title }}</title>
   {% else %}
-      <title>Flask Blog</title>
+  <title>Flask Blog</title>
   {% endif %}
-  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
   <script src="{{url_for('static', filename='script/script.js') }}"></script>
 </head>
+
 <body>
   <header>
     <div class="logo-flex">
-    <a href="#" class="logo"><img src="{{ url_for('static', filename='assets/img/newsXplorer.png')}}" alt=""></a>
-    <p class="login">LOGIN/JOIN</p>
-  </div>
+      <a href="#" class="logo"><img src="{{ url_for('static', filename='assets/img/newsXplorer.png')}}" alt=""></a>
+      <p class="login">LOGIN/JOIN</p>
+    </div>
     <nav class="navbar">
       <div class="content">
         <ul class="menu-list">
@@ -34,25 +36,27 @@
         </div>
         <div class="socials">
           <i class="fas fa-search fa-2x"></i>
-          <i class="fab fa-twitter fa-2x"></i>  
+          <i class="fab fa-twitter fa-2x"></i>
           <i class="fab fa-instagram fa-2x"></i>
           <p class="follow-btn">Follow</p>
         </div>
-         
+
       </div>
     </nav>
-    
+
   </header>
   <div class="wheather">
-    <a class="weatherwidget-io" href="https://forecast7.com/en/20d5978d96/india/" data-label_1="INDIA" data-label_2="WEATHER" data-theme="dark" data-basecolor="#1A2238" data-suncolor="#FF6A3D" >INDIA WEATHER</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/20d5978d96/india/" data-label_1="INDIA"
+      data-label_2="WEATHER" data-theme="dark" data-basecolor="#1A2238" data-suncolor="#FF6A3D">INDIA WEATHER</a>
     <script>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
     </script>
-    </div>
+  </div>
   <script src="https://kit.fontawesome.com/450a8dfd72.js" crossorigin="anonymous"></script>
-<div class="news">
-{% block content %}{% endblock %}
-</div>
-<footer>Made with <i class="fas fa-heart"></i> By DEVSTRONS'</footer>
+  <div class="news">
+    {% block content %}{% endblock %}
+  </div>
+  <footer>Made with <i class="fas fa-heart"></i> By DEVSTRONS'</footer>
 </body>
+
 </html>
