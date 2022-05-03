@@ -1,2 +1,2 @@
-web: python main.py
-worker: python main.py
+web: hypercorn -b 0.0.0.0:${PORT} main.py
+worker: hypercorn -b 0.0.0.0:${PORT} main.py
