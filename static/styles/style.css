@@ -141,11 +141,11 @@ padding-right: 10px;
 /* footer */
 footer {
   background: #1A2238;
-  height: 8rem;
+  height: 6rem;
   color: white;
-  font-size: 30px;
+  font-size: 10px;
   text-align: center;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 }
 
 /* News section */
